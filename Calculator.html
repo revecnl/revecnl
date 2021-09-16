@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR by JY</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="cal">
+        <form name="calc">
+            <input type="text" class="output" name="output" readonly>
+            <input type="button" class="clear" value="AC" onclick="document.calc.output.value=''">
+            <input type="button" class="operator" value="." onclick="document.calc.output.value+='.'">
+            <input type="button" class="operator" value="<" onclick="document.calc.output.value+=''">
+            <input type="button" class="num" value="7" onclick="document.calc.output.value+='7'">
+            <input type="button" class="num" value="8" onclick="document.calc.output.value+='8'">
+            <input type="button" class="num" value="9" onclick="document.calc.output.value+='9'">
+            <input type="button" class="operator" value="/" onclick="document.calc.output.value+='/'">
+            
+            
+            <input type="button" class="num" value="4" onclick="document.calc.output.value+='4'">
+            <input type="button" class="num" value="5" onclick="document.calc.output.value+='5'">
+            <input type="button" class="num" value="6" onclick="document.calc.output.value+='6'">
+            <input type="button" class="operator" value="*" onclick="document.calc.output.value+='*'">
+
+            <input type="button" class="num" value="1" onclick="document.calc.output.value+='1'">
+            <input type="button" class="num" value="2" onclick="document.calc.output.value+='2'">
+            <input type="button" class="num" value="3" onclick="document.calc.output.value+='3'">
+            <input type="button" class="operator" value="-" onclick="document.calc.output.value+='-'">
+            <input type="button" class="result" value="=" onclick="document.calc.output.value=eval(document.calc.output.value)">
+            
+            <input type="button" class="num" value="0" onclick="document.calc.output.value+='0'">
+            <input type="button" class="operator" value="+" onclick="document.calc.output.value+='+'">
+            
+            
+        </form>
+    </div>
+</body>
+</html>

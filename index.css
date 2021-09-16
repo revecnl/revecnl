@@ -1,0 +1,73 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+.cal{
+    width: 287px;
+    height: 422px;
+    border:1px solid black;
+    background-color: rgb(31, 31, 30);
+    padding:5px;
+    border-radius: 10px;
+}
+.num{
+    cursor: pointer;
+    border:solid 2px black;
+    background-color: rgb(192, 191, 191);
+    color:teal;
+    padding:5px;
+    border-radius: 10px;
+}
+.clear{
+    cursor: pointer;
+    border:solid 2px black;
+    background-color: rgb(112, 7, 7);
+    color:rgb(255, 255, 255);
+    padding:5px;
+    border-radius: 10px;
+}
+.operator{
+    cursor: pointer;
+    border:solid 2px black;
+    background-color: orange;
+    color:rgb(187, 70, 70);
+    padding:5px;
+    border-radius: 10px;
+}  
+.result{
+    cursor: pointer;
+    border:solid 2px black;
+    background-color: rgb(16, 46, 75);
+    color:rgb(255, 255, 255);
+    padding:5px;
+    border-radius: 10px;
+}
+.cal form{
+    display: grid;
+    grid-template-columns: repeat(4,65px);
+    grid-auto-rows: 65px;
+    grid-gap: 5px;
+} 
+.output{
+    width:275px;
+}
+.cal form input:hover{
+    box-shadow: 3px 3px 5px rgb(255, 255, 255);
+}
+.cal form .output{
+    grid-column: span 4;
+}
+.cal form .clear{
+    grid-column: span 2;
+}
+.cal form .result{
+    grid-column: span 2;
+}
